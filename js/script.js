@@ -51,7 +51,6 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-
 /*====================== typed js =========================*/
 const typed = new Typed('.multiple-text', {
     strings: ['Frontend Develeper','UI/UX Designer','Future Doctor'],
