@@ -1,0 +1,6 @@
+{
+    "editor.scrollBeyondLastLine": true,
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.horizontalScrollbarSize": 12,
+    "editor.wordWrap": "on"
+}
