@@ -386,6 +386,16 @@ span {
     color: var(--sb);
 }
 
+#msg {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: -2.6rem;
+}
+
+
+
+
 /*BREAK POINTS*/
 @media (max-width: 1200px) {
     html {
