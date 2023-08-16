@@ -25,7 +25,7 @@
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#https://assemned.github.io/index.html" class="active">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
@@ -138,18 +138,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="#" name="submit-to-google-sheet">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Adress">
+                <input type="text" name="Full Name" placeholder="Full Name">
+                <input type="email" name="Email Adress" placeholder="Email Adress">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="Mobile Number" placeholder="Mobile Number">
+                <input type="text" name="Email Subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
+        <span id="msg"></span>
     </section>
 
 
@@ -177,5 +178,6 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
+    
 </body>
 </html>
