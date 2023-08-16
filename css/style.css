@@ -26,6 +26,7 @@ html {
 body {
     background: var(--mb);
     color: var(--t);
+    overflow: hidden;
 }
 
 section {
