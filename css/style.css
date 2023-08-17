@@ -18,6 +18,14 @@
     --s: #2B7A78;
 }
 
+.dark-mode {
+    --t: #1f242d;
+    --sb: rgb(230, 233, 239);
+    --mb: #fff;
+    --s: #0ef;
+    --m: #2B7A78;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -28,11 +36,7 @@ body {
     color: var(--t);
 }
 
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-    overflow: hidden;
-}
+/*===================== header =====================*/
 
 .header {
     position: fixed;
@@ -58,6 +62,13 @@ section {
     cursor: default;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
 .navbar a {
     font-size: 1.7rem;
     color: var(--t);
@@ -65,15 +76,80 @@ section {
     transition: .3s;
 }
 
+.mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-sun,.bx-moon {
+    font-size: 1.7rem;
+    color: var(--t);
+    margin-left: 4rem;
+    margin-right: 4rem;
+    transition: .3s;
+}
+
+#darkmodeicon{
+    cursor: pointer;
+}
+
 .navbar a:hover,
+.navbar .bx-sun:hover,
+.navbar .bx-moon:hover,
 .navbar a.active{
     color: var(--m);
+}
+
+.langmode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.en a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid var(--t);
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    background-color: var(--sb);
+}
+
+.ar a {
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid var(--t);
+    border-inline-end: none;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding-bottom: .3rem;
+}
+
+.en a:hover,
+.ar a:hover{
+    background: var(--mb);
+    color: var(--t);
 }
 
 #menu-icon {
     font-size: 3.6rem;
     color: var(--t);
     display: none;
+}
+
+/*===================== home =====================*/
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    overflow: hidden;
 }
 
 .home {
@@ -162,6 +238,9 @@ span {
     box-shadow: none;
 }
 
+
+/*===================== about =====================*/
+
 .about {
     display: flex;
     justify-content: center;
@@ -180,7 +259,7 @@ span {
 }
 
 .about-content h2{
-    text-align: left;
+    text-align: start;
     line-height: 1.2;
 }
 
@@ -192,6 +271,9 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+
+/*===================== services =====================*/
 
 .services h2 {
     margin-bottom: 5rem;
@@ -235,6 +317,9 @@ span {
     margin: 1rem 0 3rem;
 }
 
+
+/*===================== portfolio =====================*/
+
 .portfolio {
     background: var(--sb);
 }
@@ -276,6 +361,7 @@ span {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.1),var(--m));
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,6 +400,9 @@ span {
     font-size: 2rem;
     color: var(--sb);
 }
+
+
+/*===================== contact =====================*/
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -362,6 +451,9 @@ span {
     font-size: 1.6rem;
 }
 
+
+/*===================== footer =====================*/
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -393,7 +485,7 @@ span {
 }
 
 
-/*BREAK POINTS*/
+/*======================== BREAK POINTS ======================*/
 
 @media (max-width: 1200px) {
     html {
@@ -453,7 +545,24 @@ span {
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 2.6rem 0;
+    }
+    
+    .bx-sun,.bx-moon {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .en a {
+        font-size: 2rem;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+    
+    .ar a {
+        font-size: 1.8rem;
+        width: 3.6rem;
+        height: 3.6rem;
     }
 
     .home {
