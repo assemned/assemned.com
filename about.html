@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/eduford.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+            <!-- tab icon -->
+    <link rel="icon" href="img/icon-e.png" type="image/x-icon">
+
+    
+        <script src="https://kit.fontawesome.com/45f6c4ed3a.js" crossorigin="anonymous"></script>
+    
+        <title>Online Universtiy - Design Tutoriols</title>
+    
+    </head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="eduford.html"><img src="img/logo.png"></a>
+
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="eduford.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<!------a u content------>
+<section class="au">
+    <div class="row">
+        <div class="acol">
+            <h1>We are the world's largest university</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi neque magnam nam esse! Enim, deserunt doloremque minus repellendus architecto eos molestiae dolorem hic velit? Obcaecati voluptas maiores soluta nemo aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum non veniam, molestias voluptas vitae incidunt maxime ullam totam? Voluptatibus beatae tempora aspernatur eaque? Architecto laudantium quibusdam quos maiores fuga?</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="acol">
+            <img src="img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+<!------footer------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facilis quae odit commodi quaerat earum nemo labore laborum. <br>Esse voluptas eos sed beatae similique! Aliquam, numquam. Atque doloribus ea veniam.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made By <i class="fa fa-heart-o"></i> ASSEM NED</p>
+</section>
+
+
+<!------JS------>
+<script>
+
+    var navlinks = document.getElementById("navlinks")
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+    
+</script>
+
+</body>
+</html>
